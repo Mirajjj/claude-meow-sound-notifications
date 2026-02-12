@@ -1,0 +1,53 @@
+{
+  "description": "Plays cat meow sounds on Claude Code events",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/scripts/play.sh m-e-o-w"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/scripts/play.sh random"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/scripts/play.sh random"
+          }
+        ]
+      },
+      {
+        "matcher": "auth_success",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/scripts/play.sh m-e-o-w"
+          }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/bin/bash ${CLAUDE_PLUGIN_ROOT}/scripts/play.sh meow_3_extra_long"
+          }
+        ]
+      }
+    ]
+  }
+}
