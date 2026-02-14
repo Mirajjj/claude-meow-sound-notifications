@@ -16,17 +16,18 @@ The **random** pool picks from: `meow_1_normal`, `meow_2_long`, `meow_5_quick`, 
 
 ## Installation
 
-### As a Claude Code plugin
+### From the plugin marketplace
 
-```bash
-claude plugin add /path/to/claude-meow-sound-notifications
+1. Add the marketplace in Claude Code:
+
+```
+/plugin marketplace add Mirajjj/claude-meow-sound-notifications
 ```
 
-Or clone and add:
+2. Install the plugin:
 
-```bash
-git clone https://github.com/hermanleus/claude-meow-sound-notifications.git
-claude plugin add ./claude-meow-sound-notifications
+```
+/plugin install meow-sound-notifications
 ```
 
 ### Manual (copy hooks to settings)

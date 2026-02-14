@@ -1,0 +1,23 @@
+{
+  "name": "claude-meow-sound-notifications",
+  "owner": {
+    "name": "Herman Leus"
+  },
+  "metadata": {
+    "description": "Cat meow sound notifications for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "meow-sound-notifications",
+      "source": ".",
+      "description": "Play cat meow sounds on Claude Code events",
+      "version": "1.0.0",
+      "author": {
+        "name": "Herman Leus"
+      },
+      "repository": "https://github.com/Mirajjj/claude-meow-sound-notifications",
+      "license": "MIT",
+      "keywords": ["sound", "notification", "meow", "cat", "audio"]
+    }
+  ]
+}
