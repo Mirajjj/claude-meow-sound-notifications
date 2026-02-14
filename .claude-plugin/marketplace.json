@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "meow-sound-notifications",
-      "source": ".",
+      "source": "./",
       "description": "Play cat meow sounds on Claude Code events",
       "version": "1.0.0",
       "author": {
