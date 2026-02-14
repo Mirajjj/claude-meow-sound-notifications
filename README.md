@@ -2,8 +2,6 @@
 
 A Claude Code plugin that plays cat meow sounds on various events, so you never miss when Claude needs your attention.
 
-<video src="https://github.com/Mirajjj/claude-meow-sound-notifications/raw/main/sounds/meow-full.mp4" controls></video>
-
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡴⠶⢤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⣠⡴⠞⠳⠶⠦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠾⠋⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⣰⠏⠀⠀⠀⠀⠀⠀⠉⠳⣦⡀⠀⠀⠀⠀⠀⠀⣤⡾⠿⣷⠀⠀⠀⢠⡞⠁⠀⠀⠀⠀⠀⠀⠀⢹⡆⠀⠀⠀⠀⠀⠀⠀
@@ -32,13 +30,13 @@ A Claude Code plugin that plays cat meow sounds on various events, so you never 
 
 ## Sound Events
 
-| Event | Sound | When it triggers |
-|---|---|---|
-| Session start | `m-e-o-w` (slow) | Claude Code session begins |
-| Permission prompt | Random meow | Claude needs tool approval |
-| Idle prompt | Random meow | Claude is waiting for input |
-| Auth success | `m-e-o-w` (slow) | Authentication completes |
-| Elicitation dialog | `meow_3_extra_long` | Claude asks a question |
+| Event              | Sound               | When it triggers            |
+| ------------------ | ------------------- | --------------------------- |
+| Session start      | `m-e-o-w` (slow)    | Claude Code session begins  |
+| Permission prompt  | Random meow         | Claude needs tool approval  |
+| Idle prompt        | Random meow         | Claude is waiting for input |
+| Auth success       | `m-e-o-w` (slow)    | Authentication completes    |
+| Elicitation dialog | `meow_3_extra_long` | Claude asks a question      |
 
 The **random** pool picks from: `meow_1_normal`, `meow_2_long`, `meow_5_quick`, `meow_6_quick_2`.
 
@@ -64,14 +62,14 @@ If you prefer not to use the plugin system, you can add the hooks directly to `~
 
 ## Platform Support
 
-| Platform | Audio Player | Status |
-|---|---|---|
-| macOS | `afplay` (built-in) | Works out of the box |
-| Linux (PulseAudio) | `paplay` | Works out of the box |
-| Linux (PipeWire) | `pw-play` | Works out of the box |
-| Linux (ALSA) | `aplay` | Works out of the box |
-| Linux (ffmpeg) | `ffplay` | Fallback option |
-| WSL | PowerShell `SoundPlayer` | Works out of the box |
+| Platform           | Audio Player             | Status               |
+| ------------------ | ------------------------ | -------------------- |
+| macOS              | `afplay` (built-in)      | Works out of the box |
+| Linux (PulseAudio) | `paplay`                 | Works out of the box |
+| Linux (PipeWire)   | `pw-play`                | Works out of the box |
+| Linux (ALSA)       | `aplay`                  | Works out of the box |
+| Linux (ffmpeg)     | `ffplay`                 | Fallback option      |
+| WSL                | PowerShell `SoundPlayer` | Works out of the box |
 | Windows (Git Bash) | PowerShell `SoundPlayer` | Works out of the box |
 
 ### Linux: Install an audio player
@@ -115,15 +113,15 @@ Edit `hooks/hooks.json` to add, remove, or modify event handlers. See the [Claud
 
 All sounds are WAV files (PCM 16-bit LE, 44.1kHz) for maximum cross-platform compatibility. Total size: ~2.1MB.
 
-| File | Duration | Description |
-|---|---|---|
-| `m-e-o-w.wav` | 1.9s | Slow, drawn-out meow |
-| `meow_1_normal.wav` | 0.9s | Standard meow |
-| `meow_2_long.wav` | 1.8s | Longer meow |
-| `meow_3_extra_long.wav` | 3.0s | Extra long meow |
-| `meow_4_sad.wav` | 2.8s | Sad meow |
-| `meow_5_quick.wav` | 1.0s | Quick meow |
-| `meow_6_quick_2.wav` | 1.1s | Quick meow variant |
+| File                    | Duration | Description          |
+| ----------------------- | -------- | -------------------- |
+| `m-e-o-w.wav`           | 1.9s     | Slow, drawn-out meow |
+| `meow_1_normal.wav`     | 0.9s     | Standard meow        |
+| `meow_2_long.wav`       | 1.8s     | Longer meow          |
+| `meow_3_extra_long.wav` | 3.0s     | Extra long meow      |
+| `meow_4_sad.wav`        | 2.8s     | Sad meow             |
+| `meow_5_quick.wav`      | 1.0s     | Quick meow           |
+| `meow_6_quick_2.wav`    | 1.1s     | Quick meow variant   |
 
 ## License
 
