@@ -2,7 +2,7 @@
 
 A Claude Code plugin that plays cat meow sounds on various events, so you never miss when Claude needs your attention.
 
-[▶ Listen to the meow](https://github.com/Mirajjj/claude-meow-sound-notifications/raw/main/sounds/meow-full.mp3)
+<video src="https://github.com/Mirajjj/claude-meow-sound-notifications/raw/main/sounds/meow-full.mp4" controls></video>
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡴⠶⢤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⣠⡴⠞⠳⠶⠦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠾⠋⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⠀⠀⠀
